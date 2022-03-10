@@ -30,7 +30,7 @@ resource "aws_iam_role" "iam_role" {
 data "aws_iam_policy_document" "policy_doc" {
   statement {
     actions = [
-      "s3:ListBuckets"
+      "s3:ListBucket"
     ]
 
     resources = [
